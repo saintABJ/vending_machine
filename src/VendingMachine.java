@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-/// This class holds the vending logic
+/// This class that holds the vending logic
 //displayMenu()
 //processPayment()
 //dispenseItem()
