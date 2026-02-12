@@ -29,17 +29,17 @@ public class VendingMachine {
             displayMenu();
             int choice = scanner.nextInt();
 
-            if (choice == 5) {
+            if (choice == 6) {
                 System.out.println("Transaction cancelled.");
                 continue;
             }
 
-            if (choice == 6) {
+            if (choice == 7) {
                 System.out.println("Thank you for using the vending machine!");
                 break;
             }
 
-            if (choice < 1 || choice > 4) {
+            if (choice < 1 || choice > 5) {
                 System.out.println("Invalid item code. Please try again.");
                 continue;
             }
@@ -65,8 +65,8 @@ public class VendingMachine {
                     " - ₦" + item.getPrice() +
                     " (" + item.getQuantity() + " left)");
         }
-        System.out.println("5. Cancel Transaction");
-        System.out.println("6. Exit");
+        System.out.println("6. Cancel Transaction");
+        System.out.println("7. Exit");
         System.out.print("\nSelect an item: ");
     }
 
